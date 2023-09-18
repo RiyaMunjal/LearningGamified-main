@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Machine Learning</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <center><h1>Machine Learning</h1></center>
+    <p>
+      <em style="color: white; font-size: larger"
+        >This page on Machine Learning provides an overview of it's important
+        definitions and an example of what you can do with it. Happy
+        learning!</em
+      >
+    </p>
+    <div class="content">
+      <h3>What is Machine Learning?</h3>
+      <p>
+        Machine Learning is a branch of Artificial Intelligence which focuses on
+        the use of data and algorithms to imitate the way humans learn. Machine
+        Learning algorithms build a model based on sample data, which is known
+        as "training data", to make predictions without explicitly being
+        programmed to do so. The larger the dataset used, the greater is the
+        accuracy since the computers learn from the data provided.
+      </p>
+      <p>
+        Machine Learning is used in a variety of applications, such as in
+        medicine, computer vision, speech recognition and other fields where it
+        is difficult to develop conventional algorithms ot perform the required
+        task.
+      </p>
+      <p></p>
+
+      <h3>How a Machine Learning algorithm works</h3>
+      <p>
+        The learning system of an ML algorithm can be broken down into three
+        parts:
+      </p>
+      <ol>
+        <li>
+          <b>The Decision Process</b>: The algorithm is used to make a
+          prediction or a classification. So based on some input data, which can
+          either be labeled or unlabeled, the algorithm produces an estimate
+          about a pattern in the data.
+        </li>
+        <li>
+          <b>Error Function</b>: An error function evaluates the prediction of
+          the model. If there are known examples, an error function can make a
+          comparison to assess the accuracy of the model.
+        </li>
+        <li>
+          <b>Model Optimization</b>: If the model can fit better to the data
+          points in the training set, then weights are adjusted to reduce the
+          discrepancy between the known example and the model estimate. The
+          algorithm will repeat this “evaluate and optimize” process, updating
+          weights autonomously until a threshold of accuracy has been met.
+        </li>
+      </ol>
+
+      <h3>What can you do with Machine Learning?</h3>
+      <p>
+        Here is an ML model that is built for <b>Wild Cats Prediction</b>. It
+        takes the image of any wild cat like a lion, cheetah, snow leopard etc.
+        as the input and gives the name of the animal.
+      </p>
+      <h4>How the ML model works</h4>
+      <p>
+        The Python language is used to write the code for the model, so
+        knowledge of it is a must. There are a number of steps that are involved
+        in building such a machine learning model, some of them are:
+      </p>
+      <ol>
+        <li><h4>Importing the required libraries</h4></li>
+        <p>
+          First step is to import the libraries needed, like the Data Science,
+          Visualization, Tensorflow and a few other libraries.
+        </p>
+        <li><h4>Visualizing the images from the dataset</h4></li>
+        <p>
+          Various wild cat images have been used to train the model, like the
+          images of a lion, clouded leopard, cheetah, caracal, jaguar etc.
+        </p>
+        <div class="image">
+          <img src="wild-cats.jpg" alt="wild-cats" width="500" />
+        </div>
+        <li><h4>Training the model</h4></li>
+        <p>
+          The images are loaded and are run with the created model. An
+          <em>epoch</em> is when all the training data is used at once and is
+          defined as the total number of iterations of all the training data in
+          one cycle for training the machine learning model. More epochs can
+          lead to better accuracy.
+        </p>
+        <li><h4>Model Evaluation</h4></li>
+        <p>
+          Once an image is given as input and is run, the
+          <em>Test Accuracy</em> is returned as a percentage value. This enables
+          the user to see how accurately the model is able to identidy the given
+          picture and whether further improvement is required.
+        </p>
+      </ol>
+    </div>
+  </body>
+</html>

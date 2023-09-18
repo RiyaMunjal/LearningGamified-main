@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f9f9f9;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ? Navbar and Intro */
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 2em;
+  color: #359381;
+  pointer-events: none;
+  margin-right: 300px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #359381;
+  padding: 6px 15px;
+  border-radius: 20px;
+  margin: 0 10px;
+  font-weight: 600;
+}
+
+.navigation a:hover,
+.navigation a.active {
+  background: #359381;
+  color: #fff;
+}
+
+.parallax {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden; /* ? Important for parallax text to not be visible outside of the section */
+}
+
+#text {
+  position: absolute;
+  font-size: 7em;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.parallax img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+.sec {
+  position: relative;
+  background: #003329;
+  padding: 100px;
+}
+
+.sec h2 {
+  font-size: 3em;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.sec p {
+  font-size: 1em;
+  color: #fff;
+  font-weight: 300;
+}
+
+/* ? ScrollReveal CSS */
+
+.Section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 100px;
+  color: #fff;
+  /* background: #003329; */
+  background: #111222;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-title {
+  font-size: 4em;
+  margin-bottom: 50px;
+}
+
+.content {
+  position: relative;
+  width: 1150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content .image {
+  position: relative;
+  overflow: hidden;
+}
+
+.content .image img {
+  z-index: 111;
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.content .text-box {
+  z-index: 222;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  padding: 40px;
+  max-width: 400px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  transform: translate(-80px, 50px);
+}
+
+.content .text-box h3 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.media-icons {
+  margin-top: 100px;
+}
+
+.media-icons a {
+  color: #fff;
+  font-size: 2em;
+  margin: 60px;
+}
+
+.section-title {
+  font-size: 3em;
+  margin-bottom: 80px;
+}
+
+.info-title {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.info {
+  margin-left: 50px;
+}
+
+.media-info {
+  width: 400px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.media-info li {
+  list-style: none;
+  font-size: 1.4em;
+}
+
+.media-info li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.media-info li:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.media-info li:nth-child(1),
+.media-info li:nth-child(5) {
+  padding-left: 100px;
+}
+
+.media-info li:nth-child(2),
+.media-info li:nth-child(4) {
+  padding-left: 50px;
+}
+
+.sec-03 {
+  margin-bottom: 100px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 400px;
+  margin: 0 50px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.cards a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.cards h3 {
+  padding-top: 20px;
+  font-weight: 600;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+}

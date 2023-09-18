@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #0b2447;
+}
+
+h1 {
+  color: white;
+  font-size: 50px;
+}
+
+.content {
+  background-color: #a5d7e8;
+  padding: 5px;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.ModelSection {
+  color: #fff;
+  padding: 2rem 0;
+  margin-bottom: 200px;
+}
+
+/* Form Styles */
+.form-group label {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.form-control {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
+}
+
+/* Rounded button */
+.form-control[type="file"] {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* Button text */
+.form-control[type="file"]::-webkit-file-upload-button {
+  background: #e14778;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Button hover */
+.form-control[type="file"]:hover::-webkit-file-upload-button {
+  background: #0069d9;
+}
+
+.PredictButton {
+  /* Center */
+  display: flex;
+  margin: 0 auto;
+}
+
+/* Result Styles */
+.mt-5 {
+  margin-top: 2rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.img-thumbnail {
+  max-width: 100%;
+  height: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+}
+
+.prediction-text {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  text-align: center;
+  color: #20dd33;
+  font-weight: 700;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+#result {
+  margin-top: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+  .form-group label {
+    font-size: 1rem;
+  }
+
+  .form-control {
+    font-size: 0.9rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Math Game</title>
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="{{ url_for('static', filename='favicons/mathgame.png') }}"
+    />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=yes"
+    />
+
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='css/mathgame.css')}}"
+    />
+  </head>
+
+  <body>
+    <h1>The Math Game</h1>
+    <div id="container">
+      <div id="score">Score : <span id="scorevalue">0</span></div>
+      <div id="correct">Correct</div>
+      <div id="wrong">Try Again</div>
+      <div id="question"></div>
+      <div id="instruction">Click on the Correct Answer</div>
+
+      <div id="choices">
+        <div id="box1" class="box"></div>
+        <div id="box2" class="box"></div>
+        <div id="box3" class="box"></div>
+        <div id="box4" class="box"></div>
+      </div>
+      <div id="startreset">Start Game</div>
+
+      <div id="timeremaining">
+        Time remaining :
+        <span id="timeremainingvalue">60</span>
+        sec
+      </div>
+      <div id="gameOver"></div>
+    </div>
+
+    <div class="mydiv">
+      <a href="/#school" class="GoBack">Go Back</a>
+    </div>
+    <!-- script -->
+    <script
+      type="text/javascript"
+      src="{{url_for('static', filename='js/mathgame.js')}}"
+    ></script>
+  </body>
+</html>
